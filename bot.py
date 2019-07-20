@@ -7,14 +7,17 @@ import sys
 import time
 import psycopg2
 from telebot import types
-#           Config vars
+
+# Config vars
 token = os.environ['TELEGRAM_TOKEN']
-DATABASE_URL=os.environ['DATABASE_URL']
-connect = psycopg2.connect(DATABASE_URL, sslmode='require')
+DATABASE_URL = os.environ['DATABASE_URL']
+# connect = psycopg2.connect(DATABASE_URL, sslmode='require')
+connect = psycopg2.connect(DATABASE_URL, sslmode='disable')
 cursor = connect.cursor()
-#some_api_token = os.environ['SOME_API_TOKEN']
+#
+# some_api_token = os.environ['SOME_API_TOKEN']
 # some_api = some_api_lib.connect(some_api_token)
-#              ...
+#   
 bot = telebot.TeleBot(token)
 mu = types.ReplyKeyboardMarkup(resize_keyboard=True)
 mu.row('Еще!')

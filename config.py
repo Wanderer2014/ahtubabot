@@ -1,2 +1,5 @@
-#token  = '451384433:AAERxCg40m21wKolCQ_j41UYHsIHBaK7gVA'
-database_name = 'L:/Hobby-Dev/PCBOT/ahtubabot/game.db'
+# token  = ''
+# database_name = ''
+database = 'dfpgvn029auv8v'
+DATABASE_URL = os.environ['DATABASE_URL']
+# database_name = 'games.db'

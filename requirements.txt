@@ -2,7 +2,7 @@
 redis
 
 # If you need to specify a version
-requests==2.19.1
+requests==2.20.0
 psycopg2
 
 # Or you need not a pip package, @'...' specifies git branch
